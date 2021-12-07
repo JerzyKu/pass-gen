@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" href="fav3.ico">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Password Generator v1.1</h1>
+    <h6>by Jerzy Kubisiak</h6>
+    <h3>Options: </h3>
+    Lenght:  
+    <button onclick="decrise()">-</button>
+    <input type="text" name="" id="lenght" value=16 size=1>
+    <button onclick="incrise()">+</button><br>
+
+    Letters:
+    <input type="checkbox" name="litery" id="litery" checked>
+    <label for="litery">(e.g.: abcd)</label><br>
+    Uppercase:
+    <input type="checkbox" name="Uppercase" id="Uppercase" >
+    <label for="Uppercase">(e.g.: ABC)</label><br>
+    Digits: 
+    <input type="checkbox" name="cyfry" id="cyfry" checked>
+    <label for="cyfry">(e.g.: 123)</label><br>
+    Symbols: 
+    <input type="checkbox" name="Symbols" id="Symbols" >
+    <label for="Symbols">(e.g.: !@#)</label><br>
+    Exclude Similar:
+    <input type="checkbox" name="Similar" id="Similar" checked>
+    <label for="Similar">(iI1lL0oOjJ)</label><br>
+
+    <h3>Generator:</h3>
+    <button onclick="generatePassword()">Generate Password</button>
+    <button onclick="both()">Generate and copy</button><br>
+    <input type="text" value=" ▲ Click :) " id="myInput">
+    <button onclick="myFunction()">Copy Password</button>
+
+    <script src="passwordGenerator.js"></script>
+</body>
+</html>
+
+
+
